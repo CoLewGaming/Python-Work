@@ -1,0 +1,19 @@
+# CS 1030 - Corey Lewis
+# 11:00 TR Spring 2020
+# Program 2.6 page 56
+# total digits of a number
+
+# receiving the input from the user
+number = int(input("Please enter a number 0-1000: "))
+
+#breaking the user number down
+fn = number % 10
+fn1 = number / 10
+sn = fn1 % 10
+tn = fn1 / 10
+
+total = int(fn + sn + tn)
+
+print("The sum of the digits is ", total)
+
+
