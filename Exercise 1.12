@@ -1,0 +1,40 @@
+#CS 1030 - Corey Lewis
+#11:00 Spring 2020
+#Progam 1.9 Page 27
+#Problem 1.12
+
+import turtle
+
+
+t = turtle.Turtle()
+wn = turtle.Screen()
+
+
+t.forward(50)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(50)
+
+t.penup()
+t.goto(0,0)
+t.pendown()
+t.forward(50)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(50)
