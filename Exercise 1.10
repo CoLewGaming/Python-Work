@@ -1,0 +1,12 @@
+# CS 1030 - Corey Lewis
+# 11:00 TR Spring 2020
+# Problem 1.11 Page 28
+# Find the average speed in MPH
+
+
+distance = (14/1.6)
+time = (45.5/60)
+
+Speed = (distance/time)
+
+print("The average speed is", Speed, "MPH")
