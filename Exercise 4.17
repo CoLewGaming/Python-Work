@@ -1,0 +1,61 @@
+#CS 1030 - Corey Lewis
+#11:00 Spring 2020
+#Rock, Paper, Scissors
+#Problem 4.17
+
+import random
+
+print("This is Rock, Paper, Scissors. You will choose an option and in turn \n"
+      "try to beat the computer. Rock beats Scissors, Scissors beats Paper, and \n"
+      "Paper beats Rock")
+
+#list of options for the computer
+compWpn = ["Rock","Paper","Scissors"]
+
+#Making a high score counter 
+score = 0
+high_Score = 0
+
+#Boolean to keep while loop going
+game_over = False
+
+#While loop for user
+while not game_over:
+    
+    userWpn = int(input("ENTER 0:ROCK 1:PAPER or 2:SCISSORS or 9:EXIT:  "))
+    i = random.randint(0,2)
+    compChoice = compWpn[i]
+    
+    # allowing user to exit
+    if userWpn == 9:
+        print("Thanks for playing have a good day!")
+        break
+    
+    # Ensuring user inputs correct option
+    elif userWpn > 2:
+        print("Please enter a valid option")
+        
+    # if statements to see if the user wins   
+    elif userWpn == 0 and i == 2:
+        print("YOU WIN!! The computer chose",compWpn[i],"High Score: ",high_Score)
+        score+=1
+    elif userWpn == 1 and i == 0:
+        print("YOU WIN!! The computer chose",compWpn[i],"High Score: ",high_Score)
+        score+=1
+    elif userWpn == 2 and i == 1:
+        print("YOU WIN!! The computer chose",compWpn[i],"High Score: ",high_Score)
+        score+=1
+        
+    # if statement to see if user gets a draw or loses
+    elif userWpn == i:
+        print("DRAW!! The computer also chose",compWpn[i],"High Score: ",high_Score)
+    else:
+        print("YOU LOSE!! The computer chose",compWpn[i],"High Score: ",high_Score)
+        score = 0
+        
+    # blank line to make program clean when ran    
+    print()
+    
+    # checking high score is being added if the user wins   
+    if score > high_Score:
+        high_Score += 1
