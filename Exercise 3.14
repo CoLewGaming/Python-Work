@@ -1,0 +1,56 @@
+#CS 1030 - Corey Lewis
+#11:00 Spring 2020
+#Drawing Olympic rings
+#Problem 3.14
+
+import turtle
+t = turtle.Turtle()
+wn = turtle.Screen()
+
+
+def draw(x,y):
+    t.goto(x,y)
+    
+# moving function
+def move(x,y):
+    t.penup()
+    t.goto(x,y)
+    t.pendown()
+    
+# making circle function for less writting
+def circle(color,diameter):
+    t.color(color)
+    t.width(15)
+    t.circle(diameter)
+
+# lapping function
+def cover(angle,x,y,color):
+    t.width(15)
+    t.right(angle)
+    move(x,y)
+    t.color(color)
+    t.circle(100,30)
+
+# drawing the cirlces
+move(-125,50)
+circle('blue',100)
+
+move(0,-50)
+circle('yellow',100)
+
+move(125,50)
+circle('black',100)
+ 
+move(250,-50)
+circle('green',100)
+
+move(375,50)
+circle('red',100)
+
+
+# making a lapping effect
+cover(-60,-39,100,'blue')
+cover(-60,50,136,'yellow')
+cover(101,222,130,'black')
+cover(-39,305,133,'green')
+
