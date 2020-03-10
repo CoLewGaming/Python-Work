@@ -1,0 +1,29 @@
+# CS 1030 - Corey Lewis
+# 11:00 TR Spring 2020
+# Program 1.19 page 29
+# Create polygon with set coordinates
+
+
+import turtle
+
+t = turtle.Turtle()
+wn = turtle.Screen()
+
+cord1 = (40, -69.28)
+cord2 = (-40, -69.28)
+cord3 = (-80, -9.8)
+cord4 = (-40, 69)
+cord5 = (40, 69)
+cord6 = (80, 0)
+
+
+t.penup()
+t.goto(cord1)
+t.pendown()
+
+t.goto(cord2)
+t.goto(cord3)
+t.goto(cord4)
+t.goto(cord5)
+t.goto(cord6)
+t.goto(cord1)
