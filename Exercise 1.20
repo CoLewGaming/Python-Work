@@ -1,0 +1,48 @@
+# CS 1030 - Corey Lewis
+# 11:00 TR Spring 2020
+# Problem 1.20 Page 29
+# Display a 3D Rectangle
+
+import turtle
+
+#Screen and Name
+t = turtle.Turtle()
+wn = turtle.Screen()
+
+
+#Face
+t.penup()
+t.goto(-100,50)
+t.pendown()
+t.goto(100,50)
+t.goto(100,-50)
+t.goto(-100, -50)
+t.goto(-100, 50)
+
+#Top
+t.penup()
+t.goto(-100, 50)
+t.pendown()
+t.goto(-50, 100)
+t.goto(150, 100)
+t.goto(100, 50)
+
+#Right Side
+t.penup()
+t.goto(150, 100)
+t.pendown()
+t.goto(150,0)
+t.goto(100, -50)
+
+#Left Side
+t.penup()
+t.goto(-50, 100)
+t.pendown()
+t.goto(-50, 0)
+t.goto(-100, -50)
+
+#Back Side
+t.penup()
+t.goto(-50, 0)
+t.pendown()
+t.goto(150, 0)
