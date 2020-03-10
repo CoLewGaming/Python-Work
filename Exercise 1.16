@@ -1,0 +1,24 @@
+#CS 1030 - Corey Lewis
+#11:00 Spring 2020
+#Progam 1.9 Page 28
+#Problem 1.16
+
+import turtle
+
+def move(a,b):
+    t.penup()
+    t.goto(a,b)
+    t.pendown()
+def circle(a):
+    t.circle(a)
+
+t = turtle.Turtle()
+wn = turtle.Screen()
+
+circle(50)
+move(0,100)
+circle(50)
+move(-100,0)
+circle(50)
+move(-100,100)
+circle(50)
