@@ -1,0 +1,22 @@
+#CS 1030 - Corey Lewis
+#11:00 Spring 2020
+#Progam 1.9 Page 28
+#Problem 1.15
+
+import turtle
+
+
+
+t = turtle.Turtle()
+wn = turtle.Screen()
+
+t.penup()
+t.goto(0,150)
+t.pendown()
+
+t.goto(150,-150)
+t.goto(-200,50)
+t.goto(200, 50)
+t.goto(-150,-150)
+t.goto(0, 150)
+
