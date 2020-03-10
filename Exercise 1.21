@@ -1,0 +1,53 @@
+# CS1030 - Corey Lewis
+# 11:00 TR Spring 2020
+# Problem 1.21 Page 29
+# Draw a clock at 9:15:00
+
+
+import turtle
+
+def move(a,b):
+    t.penup()
+    t.goto(a,b)
+    t.pendown()
+
+def go(a,b):
+    t.goto(a,b)
+
+def write(a):
+    t.write(a)
+
+
+t = turtle.Turtle()
+wn = turtle.Screen()
+
+#Clock Face
+move(0,-200)
+t.circle(200)
+
+#Clock Hands
+move(0,0)
+go(-150,0)
+move(0,1)
+go(-150,1)
+move(0,0)
+go(130,0)
+move(0,1)
+go(130,1)
+move(0,0)
+go(0,150)
+
+
+#Numbers on clock
+move(-190, 0)
+write(9)
+move(0,185)
+write(12)
+move(190, 0)
+write(3)
+move(0, -195)
+write(6)
+
+#Digital time
+move(-8, -210)
+write("9:15:00")
