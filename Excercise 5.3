@@ -1,0 +1,22 @@
+#CS1030 Corey Lewis
+#11:00 TR Spring 2020
+#Program 5.3, Page159
+#Converting from Kilograms to Pounds
+
+kilograms = 1
+
+print("Kilograms \t Pounds")
+while kilograms <= 199:
+    pounds = kilograms * 2.2
+    print(format(kilograms)," \t\t ",format(pounds,"0.2f"))
+    kilograms = kilograms + 1
+
+print()
+print("With For Loop")
+
+print("Kilograms \t Pounds")
+for kilograms in range(1,199+1):
+    pounds = kilograms * 2.2
+    print(format(kilograms)," \t\t ",format(pounds,"0.2f"))
+    kilograms = kilograms + 1
+    
