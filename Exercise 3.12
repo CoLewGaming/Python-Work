@@ -1,0 +1,29 @@
+#CS 1030 - Corey Lewis
+#11:00 Spring 2020
+#Progam drawing a star from users input
+#Problem 3.12**
+
+import turtle
+t = turtle.Turtle()
+wn = turtle.Screen()
+
+# functions for easier to read code
+def draw(x,y):
+    t.goto(x,y)
+
+def move(x,y):
+    t.penup()
+    t.goto(x,y)
+    t.pendown()
+
+def star(x):
+    x=0
+    while(x<=4):
+        t.right(144)
+        t.forward(num)
+        x += 1
+     
+# making star for user and getting length of side from user input
+num = int(input("Enter the length of the star: "))    
+move(0,num/2)
+star(num)
