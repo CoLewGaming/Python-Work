@@ -1,0 +1,54 @@
+#CS 1030 - Corey Lewis
+#11:00 Spring 2020
+#Progam 1.9 Page 28
+#Problem 1.17
+
+
+import turtle
+t = turtle.Turtle()
+wn = turtle.Screen()
+
+#Functions 
+def move(a,b):
+    t.penup()
+    t.goto(a,b)
+    t.pendown()
+def draw(a,b):
+    t.goto(a,b)
+
+
+#Graph
+move(-100,0)
+draw(100,0)
+move(0,-100)
+draw(0,100)
+
+#Graph Bars
+a = 11
+b = -120
+c = -120
+
+
+
+for x in range(a):
+    c += 20
+    move(c,-10)
+    draw(c,10)
+
+def marks(x,y):
+    a = 11
+    b = -120
+    for x in range(a):
+        b += 20
+        move(b,y)
+        draw(x,b)
+        
+marks(10,-10)
+
+        
+    
+#X and Y For Graph
+move(-5,105)
+t.write("Y")
+move(-105,-5)
+t.write("X")
