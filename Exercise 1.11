@@ -1,0 +1,28 @@
+# CS 1030 - Corey Lewis
+# 11:00 TR Spring 2020
+# Problem 1.11 Page 28
+# Project the future population
+
+Humans = 312032486
+
+#Births, Deaths, and Imigration per year
+births = (4505092.8)
+deaths = (2425844.75)
+imig= (700800.0)
+
+#Total Gains per year
+Gains = (births + imig) - deaths
+
+year1 = (Humans + Gains)
+year2 = year1 + Gains
+year3 = year2 + Gains
+year4 = year3 + Gains
+year5 = year4 + Gains
+
+
+print(round(year1))
+print(round(year2))
+print(round(year3))
+print(round(year4))
+print(round(year5))
+
