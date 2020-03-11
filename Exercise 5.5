@@ -7,23 +7,21 @@
 kilograms = 1
 
 # second set of var to itterate 5 times 
-lbs = 5
-kg = 2.27
+lbs = 20
+
+
 # making initial table header
 print("Kilograms \t Pounds \t|\t Pounds \t Kilograms")
+
 # while loop to itterate 199 times
 while kilograms < 200:
+    # updating variables per itteration
     pounds = kg * 2.2
     kg = lbs / 2.2
-    # this is going to stop the right side once it hits 515lbs
-    if kilograms < 104:
-        print (kilograms," \t\t ",format(pounds,"0.2f")," \t|\t ",
-        format(lbs,"0.2f")," \t", format(kg,"0.2f"))
-        kilograms = kilograms + 1
-        lbs = lbs + 5
-        
-    # this will keep the left side going after 515lbs
-    else:
-        print (kilograms," \t\t ",format(pounds,"0.2f")," \t|\t ",)
-        kilograms = kilograms + 1
-        pounds = kilograms * 2.2
+    print(kilograms, " \t\t ", format(pounds, "0.2f"), " \t|\t ",
+            format(lbs, "0.2f"), " \t", format(kg, "0.2f"))
+    
+    # updating second set of variables
+    kilograms += 2
+    lbs = lbs + 5
+
