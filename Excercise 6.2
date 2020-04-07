@@ -1,0 +1,27 @@
+import math
+
+#FUNCTION
+def addNum(number):
+    # vairables to make the program run
+    count = -1
+    total = 0
+    while(number != 0):
+        # using a counter to help itterate each step
+        count += 1
+        
+        # adding the total from the input
+        if(count % 2 == 0):
+            total = total + math.floor(number%10)
+            
+        # taking the last digit off the number
+        else:
+            number = math.floor(number / 10)
+            
+        # ensuring we have added all numbers
+        if number == 0:
+            return (total)
+        
+# getting input from user
+num = int(input("Please enter a number: "))
+# Calling and displaying to user from function
+print(addNum(num))
