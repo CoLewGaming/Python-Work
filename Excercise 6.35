@@ -1,0 +1,23 @@
+import math
+import random
+
+
+
+# Creating function
+def countLetterA():
+    # Using count to have a running balance for A
+    count = 0
+
+    # iterating 10,000 times in a for loop
+    for x in range(10000):
+
+        # Allowing letters to randomly generate from A - Z in ASCII
+        letters = random.randint(65, 90)
+
+        # If we strike on 65 that means we have an A and we can increase our count
+        if (letters == 65):
+            count +=1
+    print("The letter A was generated",count,"times")
+
+
+countLetterA()
