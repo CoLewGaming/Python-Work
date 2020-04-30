@@ -1,0 +1,26 @@
+import math
+
+# class for rectangle
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    # Method to get the perimeter of the rectangle
+    def getPerimeter(self):
+        return (self.width + self.height) * 2
+
+    # Method to get teh area of the rectangle
+    def getArea(self):
+        return self.width * self.height
+
+# Allowing for user input
+x = eval(input("please enter a width: "))
+y = eval(input("please enter a height: "))
+
+# Making a variable for the Class
+rec = Rectangle(x, y)
+
+#Displaying the results of the methods within the class being called
+print("The area of the rectangle is: ", rec.getArea())
+print("The peremiter of the rectangle is: ", rec.getPerimeter())
